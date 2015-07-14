@@ -1,0 +1,204 @@
+<t:templates xmlns:t="http://nwalsh.com/docbook/xsl/template/1.0"
+             xmlns:param="http://nwalsh.com/docbook/xsl/template/1.0/param"
+             xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
+
+<!-- ==================================================================== -->
+
+<t:titlepage t:element="book" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <mediaobject/>
+      <title/>
+      <pubdate/>
+      <legalnotice/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+      <hr/>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<!-- ==================================================================== -->
+
+<t:titlepage t:element="chapter" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <title/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<t:titlepage t:element="topic" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <title/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<!-- ==================================================================== -->
+
+<t:titlepage t:element="section" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <title/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+      <xsl:if test="count(parent::*)='0'"><hr/></xsl:if>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<t:titlepage t:element="sect1" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <title/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+      <xsl:if test="count(parent::*)='0'"><hr/></xsl:if>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<t:titlepage t:element="sect2" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <title/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+      <xsl:if test="count(parent::*)='0'"><hr/></xsl:if>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<t:titlepage t:element="sect3" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <title/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+      <xsl:if test="count(parent::*)='0'"><hr/></xsl:if>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<t:titlepage t:element="sect4" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <title/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+      <xsl:if test="count(parent::*)='0'"><hr/></xsl:if>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<t:titlepage t:element="sect5" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <title/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+      <xsl:if test="count(parent::*)='0'"><hr/></xsl:if>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<t:titlepage t:element="simplesect" t:wrapper="div" class="titlepage">
+   <t:titlepage-content t:side="recto">
+      <title/>
+   </t:titlepage-content>
+
+   <t:titlepage-content t:side="verso">
+   </t:titlepage-content>
+
+   <t:titlepage-separator>
+      <xsl:if test="count(parent::*)='0'"><hr/></xsl:if>
+   </t:titlepage-separator>
+
+   <t:titlepage-before t:side="recto">
+   </t:titlepage-before>
+
+   <t:titlepage-before t:side="verso">
+   </t:titlepage-before>
+</t:titlepage>
+
+<!-- ==================================================================== -->
+
+</t:templates>
