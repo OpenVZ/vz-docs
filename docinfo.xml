@@ -1,9 +1,12 @@
 <mediaobject>
   <imageobject role="fo">
-    <imagedata align="left" contentdepth="50%" fileref="stylesheets/Odin_Virtuozzo_logo.png" />
+    <imagedata align="left" contentdepth="50%" fileref="stylesheets/Odin_Virtuozzo_logo_pdf.png" />
+  </imageobject>
+  <imageobject role="webhelp">
+    <imagedata fileref="common/images/Odin_Virtuozzo_logo_webhelp.png" />
   </imageobject>
   <imageobject role="html">
-    <imagedata fileref="stylesheets/Odin_Virtuozzo_logo.png" />
+    <imagedata fileref="stylesheets/Odin_Virtuozzo_logo_pdf.png" />
   </imageobject>
 </mediaobject>
 
@@ -14,21 +17,22 @@
 <legalnotice>
   <simpara>
      <literallayout>
-      Parallels IP Holdings GmbH
-      Vordergasse 59
-      8200 Schaffhausen
-      Switzerland
-      Tel: + 41 52 632 0411
-      Fax: + 41 52 672 2010
-      http://www.odin.com
-      Copyright &#169; 1999-2015 Parallels IP Holdings GmbH and its affiliates. All rights reserved.
-      This product is protected by United States and international copyright laws. The product’s underlying technology, patents, and trademarks
-      are listed at http://www.odin.com/trademarks.
-      Microsoft, Windows, Windows Server, Windows NT, Windows Vista, and MS-DOS are registered trademarks of Microsoft Corporation.
-      Apple, Mac, the Mac logo, Mac OS, iPad, iPhone, iPod touch, FaceTime HD camera and iSight are trademarks of Apple Inc., registered
-      in the US and other countries.
-      Linux is a registered trademark of Linus Torvalds.
-      All other marks and names mentioned herein may be trademarks of their respective owners.
+Parallels IP Holdings GmbH
+Vordergasse 59
+8200 Schaffhausen
+Switzerland
+Tel: + 41 52 632 0411
+Fax: + 41 52 672 2010
+http://www.odin.com
+Copyright &#169; 1999-2015 Parallels IP Holdings GmbH and its affiliates. All rights reserved.
+This product is protected by United States and international copyright laws. The product’s underlying technology,
+patents, and trademarks are listed at http://www.odin.com/trademarks.
+Microsoft, Windows, Windows Server, Windows NT, Windows Vista, and MS-DOS are registered trademarks of
+Microsoft Corporation.
+Apple, Mac, the Mac logo, Mac OS, iPad, iPhone, iPod touch, FaceTime HD camera and iSight are trademarks of
+Apple Inc., registered in the US and other countries.
+Linux is a registered trademark of Linus Torvalds.
+All other marks and names mentioned herein may be trademarks of their respective owners.
      </literallayout>
   </simpara>
 </legalnotice>

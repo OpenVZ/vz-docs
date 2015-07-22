@@ -7,7 +7,7 @@
 <t:titlepage t:element="book" t:wrapper="div" class="titlepage">
    <t:titlepage-content t:side="recto">
       <mediaobject/>
-      <title/>
+      <title id="booktitle"/>
       <pubdate/>
       <legalnotice/>
    </t:titlepage-content>

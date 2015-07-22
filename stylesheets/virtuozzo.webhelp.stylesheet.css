@@ -1,0 +1,223 @@
+body {
+    font: 11pt sans-serif;
+}
+
+p, ul, ol, li {
+    font: 11pt sans-serif;
+}
+
+.pubdate, .legalnotice {
+    padding-left: 31px;
+}
+
+div.navfooter {
+    font-size: 9pt;
+    margin-top: 25px;
+}
+
+div.navfooter hr {
+    display: none;
+}
+
+div.chapter, div.section, div.navfooter {
+    padding-left: 15px;
+}
+
+code, .screen {
+    font: 11pt Courier, monospace;
+}
+
+.screen {
+    background: #E0E0E0;
+    padding: 5px;
+    margin: 0.5em 0 0.5em 0;
+}
+
+a.xref:link, a.xref:visited, a.xref:hover, a.xref:active {
+    color: #9D0C22 !important;
+    font-weight: normal;
+}
+
+#sidebar {
+background: #FFF none repeat scroll 0% 0%;
+border-right: 1px solid #DDD;
+overflow: auto;
+overflow-x: hidden;
+}
+
+.ui-tabs .ui-tabs-nav {
+/*background: #DDD none repeat scroll 0% 0%;*/
+padding-top: 5px;
+padding-left: 3px;
+padding-right: 3px;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected {
+margin-bottom: 0px;
+padding-bottom: 1px;
+background: #FFF none repeat scroll 0% 0%;
+border-left: 1px solid #CCC;
+border-top: 1px solid #CCC;
+border-right: 1px solid #CCC;
+}
+
+.ui-tabs .ui-tabs-nav li.ui-tabs-selected a, .ui-tabs .ui-tabs-nav li.ui-state-disabled a, .ui-tabs .ui-tabs-nav li.ui-state-processing a {
+background: #FFF;
+border: 0px;
+}
+
+.filetree span.file {
+background: none;
+}
+
+.filetree li span a {
+color: black;
+font-size: 10pt;
+text-decoration: none;
+}
+
+.filetree span.folder, .filetree span.file {
+padding: 0px 0px 1px 3px;
+}
+
+.ui-tabs .ui-tabs-panel {
+padding: 0.2em 21px;
+}
+
+.treeview .hover {
+color: #9D0C22;
+}
+
+#leftnavigation {
+position: static;
+border-right: 0px;
+background-color: #FFF !important;
+padding: 0px !important;
+}
+
+.ui-layout-pane {
+border: 0px;
+}
+
+.searchExpression {
+font-size: 10pt;
+}
+
+.ui-widget input, .ui-widget select, .ui-widget textarea, .ui-widget button, #searchResults p, .searchresult li a, .searchHighlight a {
+font: 10pt sans-serif;
+}
+
+.searchresult {
+padding-left: 15px;
+}
+
+.highlight {
+background-color: #DD8833;
+}
+
+#webhelp-currentid {
+font-weight: bold;
+background-color: #FFF !important;
+}
+
+#header {
+    background: transparent linear-gradient(to bottom, #333 0%, #111 100%) repeat scroll 0% 0%;
+    position: fixed;
+    width: 100%;
+    height: 98px;
+    top: 0;
+    right: 0;
+    bottom: auto;
+    left: 0;
+    border-bottom: 0px;
+    z-index: 2000;
+}
+
+#header h1 {
+    margin-left: 310px;
+    position: fixed;
+    top: 20px;
+    left: -15px;
+    color: #FEFEFE !important;
+    font: 20.736pt sans-serif;
+}
+
+#content h1, #content h2, #content h3 { 
+    color: black !important;
+    font-weight: normal;
+}
+
+#content h1 {
+    font-size: 20.736pt;
+}
+
+#content h2 {
+    font-size: 17.28pt;
+}
+
+#content h3 {
+    font-size: 14.4pt;
+}
+
+#content h4 {
+    font-size: 12pt;
+    color: black !important;
+    font-weight: bold;
+}
+
+#content table td, #content table th {
+    padding: 0px;
+}
+
+#content table {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#content table {
+    padding: 0px;
+    border: 1px solid #C0C0C0;
+    border-spacing: 0px;
+}
+
+#content table thead, #content table th {
+    background: #C0C0C0;
+    color: black;
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+#content table th, #content table td {
+    border: 1px solid #C0C0C0;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+div.note {
+    background-color: #F5F5F5;
+    margin: 0.5em 0 0.5em 0 !important;
+    padding: 5px;
+    border-top: 2px solid #368FAF;
+    border-bottom: 2px solid #368FAF;
+}
+
+div.note h3.title {
+    display: none;
+}
+
+div.note * {
+    border: 0px !important;
+}
+
+div.note p, div.note h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.note ul, div.note ol {
+    margin-bottom: 0px;
+}
+
+div.table p.title {
+    margin-bottom: 0px;
+}

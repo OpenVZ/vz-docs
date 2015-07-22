@@ -1,0 +1,9 @@
+<project>
+  <property name="xslt-processor-classpath" value="saxon6-5-5/saxon.jar"/>
+  <property name="xercesImpl.jar" value="xerces-2_11_0/xercesImpl.jar"/>
+  <property name="xml-apis.jar" value="xerces-2_11_0/xml-apis.jar"/>
+  <property name="input-xml" value="virtuozzo_7_users_guide.xml"/>
+  <property name="output-dir" value="virtuozzo_7_users_guide.webhelp"/>
+  <property name="stylesheet-path" value="stylesheets/virtuozzo.webhelp.xsl"/>
+  <import file="/usr/share/sgml/docbook/xsl-ns-stylesheets/webhelp/build.xml"/>
+</project>

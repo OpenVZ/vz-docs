@@ -1,9 +1,12 @@
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" version="1.0">
 
-<xsl:import href="/usr/share/asciidoc/docbook-xsl/chunked.xsl"/>
-<xsl:import href="virtuozzo.html.titlepages.xsl"/>
+<xsl:import href="/usr/share/asciidoc/docbook-xsl/xhtml.xsl"/>
+<xsl:import href="virtuozzo.xhtml.titlepages.xsl"/>
 
-<xsl:param name="html.stylesheet" select="'stylesheets/virtuozzo.html.stylesheet.css'"/>
+<xsl:param name="html.stylesheet" select="'stylesheets/virtuozzo.xhtml.stylesheet.css'"/>
+
+<xsl:param name="use.role.for.mediaobject">1</xsl:param>
+<xsl:param name="preferred.mediaobject.role">html</xsl:param>
 
 <xsl:param name="shade.verbatim" select="0"/>
 <xsl:attribute-set name="shade.verbatim.style">
@@ -11,8 +14,9 @@
   <xsl:attribute name="background-color">#E0E0E0</xsl:attribute>
 </xsl:attribute-set>
 
+<xsl:param name="section.autolabel.max.depth">3</xsl:param>
 <xsl:param name="admon.textlabel" select="1"/>
-<xsl:param name="generate.legalnotice.link" select="1"/>
+<xsl:param name="generate.legalnotice.link" select="0"/>
 <xsl:param name="formal.object.break.after">0</xsl:param>
 
 <xsl:param name="table.borders.with.css" select="1"/>
@@ -29,6 +33,7 @@
 <!--
   Table of contents inserted by <?asciidoc-toc?> processing instruction.
 -->
+<xsl:param name="toc.section.depth">3</xsl:param>
 <xsl:param name="generate.toc">
    <xsl:choose>
       <xsl:when test="/processing-instruction('asciidoc-toc')">

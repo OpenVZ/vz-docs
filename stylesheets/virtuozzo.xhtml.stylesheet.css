@@ -1,10 +1,10 @@
 body {
-  font-family: serif;
-  font-size: 12pt;
+  font-family: sans-serif;
+  font-size: 11pt;
 }
 
 code, pre {
-  font-family: monospace;
+  font-family: Courier, monospace;
   font-size: 11pt;
 }
 
@@ -27,10 +27,24 @@ body div {
   margin: 0;
 }
 
-h1, h2, h3, h4, h5, h6
-{
+div.toc {
+    margin-bottom: 40px;
+}
+
+div.book div.titlepage .mediaobject {
+   padding-bottom: 40px;
+   padding-top: 40px;
+}
+
+div#booktitle h1 {
+   font-size: 36pt;
+   color: black;
+}
+
+h1, h2, h3, h4, h5, h6 {
   color: #9D0C22;
-  font-family: serif;
+  font-family: sans-serif;
+  font-weight: normal;
 }
 
 h1 {
@@ -62,23 +76,33 @@ div.sidebar p.title
 {
   font-weight: bold;
   color: #9D0C22;
-  font-family: serif;
+  font-family: sans-serif;
   margin-bottom: 0.2em;
 }
 
 div.note {
     background-color: #F5F5F5;
-    margin: 0.5em 0 0.5em 0;
-    padding-top: 1px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 1px;
+    margin: 0.5em 0 0.5em 0 !important;
+    padding: 5px;
     border-top: 2px solid #368FAF;
     border-bottom: 2px solid #368FAF;
 }
 
 div.note h3 {
     display: none;
+}
+
+div.note * {
+    border: 0px !important;
+}
+
+div.note p, div.note h3 {
+    padding: 0px;
+    margin: 0px;
+}
+
+div.note ul, div.note ol {
+    margin-bottom: 0px;
 }
 
 body h1 {
@@ -170,7 +194,8 @@ html {
 }
 
 body h1, body h2, body h3, body h4, body h5, body h6 {
-  margin-left: 0
+  margin-left: 0px;
+  margin-top: 30px;
 } 
 
 body pre {
@@ -186,7 +211,7 @@ tt.literal, code.literal {
 .programlisting, .screen {
   border: 1px solid silver;
   background: #E0E0E0;
-  margin: 0.5em 10% 0.5em 0;
+  margin: 0.5em 0 0.5em 0;
   padding: 10px;
 }
 
@@ -329,16 +354,13 @@ a img {
   border-style: none;
 }
 
+a.xref:link, a.xref:visited, a.xref:hover, a.xref:active {
+    color: #9D0C22;
+    font-weight: normal;
+}
+
 @media print {
   div.navheader, div.navfooter { display: none; }
-}
-
-div.book div.titlepage .mediaobject {
-   padding-bottom: 40px;
-}
-
-div.book div.titlepage h1.title {
-   font-size: 36pt;
 }
 
 span.aqua { color: aqua; }
