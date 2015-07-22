@@ -6,11 +6,14 @@
 <xsl:import href="/usr/share/asciidoc/docbook-xsl/fo.xsl"/>
 <xsl:import href="virtuozzo.fo.titlepages.xsl"/>
 
+<xsl:param name="use.role.for.mediaobject">1</xsl:param>
+<xsl:param name="preferred.mediaobject.role">fo</xsl:param>
+
 <xsl:param name="paper.type" select="'USletter'"/>
 <xsl:param name="alignment">left</xsl:param>
 
-<xsl:param name="body.font.family" select="'serif'"/>
-<xsl:param name="body.font.master">12</xsl:param>
+<xsl:param name="body.font.family" select="'sans-serif'"/>
+<xsl:param name="body.font.master">11</xsl:param>
 <xsl:param name="body.font.size">
  <xsl:value-of select="$body.font.master"/><xsl:text>pt</xsl:text>
 </xsl:param>
@@ -19,6 +22,8 @@
   <xsl:attribute name="font-size">10pt</xsl:attribute>
 </xsl:attribute-set>
 
+<xsl:param name="ulink.show">0</xsl:param>
+<xsl:param name="section.autolabel.max.depth">3</xsl:param>
 <xsl:param name="insert.xref.page.number" select="1"/>
 <xsl:param name="admon.textlabel" select="1"/>
 <xsl:param name="formal.object.break.after">0</xsl:param>
@@ -31,6 +36,7 @@
 <!--
   Table of contents inserted by <?asciidoc-toc?> processing instruction.
 -->
+<xsl:param name="toc.section.depth">3</xsl:param>
 <xsl:param name="generate.toc">
    <xsl:choose>
       <xsl:when test="/processing-instruction('asciidoc-toc')">
@@ -84,7 +90,7 @@ book    nop
       <xsl:attribute name="border">#C0C0C0 0.75pt solid</xsl:attribute>
     </xsl:when>
     <xsl:otherwise>
-      <xsl:attribute name="background-color">#FFFFFF</xsl:attribute>
+      <xsl:attribute name="background-color">#FFF</xsl:attribute>
       <xsl:attribute name="border">#C0C0C0 0.75pt solid</xsl:attribute>
     </xsl:otherwise>
   </xsl:choose>
@@ -250,7 +256,7 @@ book    nop
             margin-left="{$title.margin.left}" 
             font-size="24.8832pt"
             font-weight="normal" 
-            font-family="serif"
+            font-family="sans-serif"
             color="#9D0C22">
     <xsl:call-template name="component.title">
       <xsl:with-param name="node" select="ancestor-or-self::chapter[1]"/>
@@ -266,7 +272,7 @@ book    nop
             margin-top="20pt"
             font-size="20.736pt"
             font-weight="normal" 
-            font-family="serif"
+            font-family="sans-serif"
             color="#9D0C22">
     <xsl:call-template name="component.title">
       <xsl:with-param name="node" select="ancestor-or-self::section[1]"/>
