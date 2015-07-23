@@ -1,4 +1,4 @@
-html/
-pdf/
-xml/
-ant/
+xml/*
+*.webhelp
+*.pdf
+*_build.xml
