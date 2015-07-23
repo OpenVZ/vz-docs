@@ -6,7 +6,7 @@ Documentation is available online at http://docs.openvz.org.
 
 ### How to build
 
-1. Install [asciidoc](http://www.methods.co.nz/asciidoc/).
+1. Install [AsciiDoc](http://www.methods.co.nz/asciidoc/).
 2. Install [xsltproc](http://xmlsoft.org/XSLT/).
 3. Install [Docbook XSL Stylesheets v4.x and v5.0](http://docbook.sourceforge.net/).
 4. Install [Apache FOP](https://xmlgraphics.apache.org/fop/).
