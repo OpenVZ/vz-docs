@@ -92,7 +92,7 @@
 </xsl:template>
 
 <xsl:template match="title" mode="book.titlepage.recto.auto.mode">
-<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" xsl:use-attribute-sets="book.titlepage.recto.style" padding="0px" margin="0px" text-align="left" font-size="36pt" space-before="12mm" font-weight="bold" font-family="GothamLight,sans-serif">
+<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" xsl:use-attribute-sets="book.titlepage.recto.style" padding="0px" margin="0px" text-align="left" font-size="36pt" space-before="12mm" font-weight="normal" font-family="sans-serif">
 <xsl:call-template name="division.title">
 <xsl:with-param name="node" select="ancestor-or-self::book[1]"/>
 </xsl:call-template>
@@ -100,7 +100,7 @@
 </xsl:template>
 
 <xsl:template match="pubdate" mode="book.titlepage.recto.auto.mode">
-<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" xsl:use-attribute-sets="book.titlepage.recto.style" margin="0px" padding="0px" space-before="3mm" text-align="left" font-size="11pt" font-weight="normal" font-family="GothamLight,sans-serif">
+<fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" xsl:use-attribute-sets="book.titlepage.recto.style" margin="0px" padding="0px" space-before="3mm" text-align="left" font-size="11pt" font-weight="normal" font-family="sans-serif">
 <xsl:apply-templates select="." mode="book.titlepage.recto.mode"/>
 </fo:block>
 </xsl:template>
@@ -849,7 +849,7 @@
 </xsl:template>
 
 <xsl:template name="table.of.contents.titlepage.recto">
-  <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" xsl:use-attribute-sets="table.of.contents.titlepage.recto.style" space-before.minimum="1em" space-before.optimum="1.5em" space-before.maximum="2em" space-after="0.5em" start-indent="0pt" color="#9D0C22" font-size="24.8832pt" font-weight="normal" font-family="GothamLight,sans-serif">
+  <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" xsl:use-attribute-sets="table.of.contents.titlepage.recto.style" space-before.minimum="1em" space-before.optimum="1.5em" space-before.maximum="2em" space-after="0.5em" start-indent="0pt" color="#9D0C22" font-size="24.8832pt" font-weight="normal" font-family="sans-serif">
 <xsl:call-template name="gentext">
 <xsl:with-param name="key" select="'TableofContents'"/>
 </xsl:call-template></fo:block>
