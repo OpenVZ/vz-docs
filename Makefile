@@ -1,3 +1,7 @@
+ifndef SAXONPATH
+  SAXONPATH = /usr/share/java/saxon.jar
+endif
+
 ASC_FILES := $(wildcard *.asc)
 
 PDF_FILES := $(patsubst %.asc, %.pdf, $(ASC_FILES))
@@ -19,7 +23,7 @@ all: $(PDF_FILES) $(HTML_FILES)
 %_build.xml: %.asc
 	echo "\
 	<project>\
-	  <property name=\"xslt-processor-classpath\" value=\"/usr/share/java/saxon.jar\"/>\
+	  <property name=\"xslt-processor-classpath\" value=\"$(SAXONPATH)\"/>\
 	  <property name=\"xercesImpl.jar\" value=\"/usr/share/java/xerces-j2.jar\"/>\
 	  <property name=\"xml-apis.jar\" value=\"/usr/share/java/xml-commons-apis.jar\"/>\
 	  <property name=\"input-xml\" value=\"$(XML_DIR)/`echo $<|sed 's/\.asc/.xml/'`\"/>\
