@@ -6,6 +6,8 @@
 <xsl:param name="use.role.for.mediaobject">1</xsl:param>
 <xsl:param name="preferred.mediaobject.role">webhelp</xsl:param>
 
+<xsl:param name="chunker.output.method">xml</xsl:param>
+
 <xsl:param name="shade.verbatim" select="0"/>
 <xsl:attribute-set name="shade.verbatim.style">
   <xsl:attribute name="border">0</xsl:attribute>
