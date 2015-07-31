@@ -12,8 +12,7 @@ Documentation is available online at http://docs.openvz.org.
 4. Install [Apache FOP](https://xmlgraphics.apache.org/fop/).
 5. Install [Apache Xerces2 Java](http://xerces.apache.org/xerces2-j/).
 6. Install [Saxon v6.5.5](http://saxon.sourceforge.net/saxon6.5.5/index.html).
-7. Install [Apache Ant](http://ant.apache.org/).
-8. Run make(1).
+7. Run make(1).
 
 ### How to contribute
 
