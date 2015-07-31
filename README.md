@@ -14,7 +14,12 @@ Documentation is available online at http://docs.openvz.org.
 6. Install [Saxon v6.5.5](http://saxon.sourceforge.net/saxon6.5.5/index.html).
 7. Run make(1).
 
+On CentOS:
+
+ yum install -y asciidoc fop docbook5-style-xsl-extensions \
+	docbook5-style-xsl xerces-j2 docbook5-schemas
+
 ### How to contribute
 
 * [How to submit patches](https://openvz.org/Userspace_patches)
-* Spread the word about OpenVZ in [social networks](http://criu.org/Contacts)
+* Spread the word about OpenVZ in [social networks](https://openvz.org/Contacts)
