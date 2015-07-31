@@ -43,6 +43,8 @@ all: $(PDF_FILES) $(HTML_FILES)
 $(XML_DIR)/%.xml: %.asc
 	mkdir -p xml
 	a2x -vL -a docinfo1 -r images -f docbook -D $(XML_DIR)/ $<
+	# We don't want to download schemas from internet later, so we patch output files
+	sed -ir '/OASIS/ { s/"(http.*)"/\"\/usr\/share\/sgml\/docbook\/xml-dtd-4.5\/docbookx.dtd\"/g }' $@
 
 %.webhelp: $(XML_DIR)/%.xml
 	rm -rf $@
