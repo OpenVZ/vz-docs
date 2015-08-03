@@ -31,6 +31,8 @@ XML_FILES := $(patsubst %.asc, $(XML_DIR)/%.xml, $(ASC_FILES))
 
 HTML_FILES := $(patsubst %.asc, %.webhelp, $(ASC_FILES))
 
+WWW_ROOT := /var/www/html/
+
 .PHONY: clean
 
 all: $(PDF_FILES) $(HTML_FILES)
@@ -41,6 +43,8 @@ all: $(PDF_FILES) $(HTML_FILES)
 $(XML_DIR)/%.xml: %.asc
 	mkdir -p xml
 	a2x -vL -a docinfo1 -r images -f docbook -D $(XML_DIR)/ $<
+	# We don't want to download schemas from internet later, so we patch output files
+	sed -ir '/OASIS/ { s/"(http.*)"/\"\/usr\/share\/sgml\/docbook\/xml-dtd-4.5\/docbookx.dtd\"/g }' $@
 
 %.webhelp: $(XML_DIR)/%.xml
 	rm -rf $@
@@ -67,3 +71,7 @@ $(XML_DIR)/%.xml: %.asc
 
 clean:
 	rm -rvf $(XML_DIR)/* *.webhelp *.pdf *_build.xml xml/
+
+publish: $(PDF_FILES) $(HTML_FILES)
+	cp -R index.html stylesheets ${WWW_ROOT}
+	cp -R $(PDF_FILES) $(HTML_FILES) ${WWW_ROOT}
