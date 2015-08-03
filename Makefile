@@ -1,7 +1,3 @@
-ifndef SAXONPATH
-  SAXONPATH = /usr/share/java/saxon.jar
-endif
-
 DOCBOOK_DIST := /usr/share/sgml/docbook/xsl-ns-stylesheets
 USER_IMAGES_PARENT_DIR := images
 THER_XSLTPROC_ARGS = --stringparam webhelp.base.dir "$(OUTPUT_DIR)"
