@@ -63,6 +63,7 @@ $(XML_DIR)/%.xml: %.asc
               -Djavax.xml.parsers.SAXParserFactory=org.ccil.cowan.tagsoup.jaxp.SAXFactoryImpl \
               -classpath $(classpath) \
               com.nexwave.nquindexer.IndexerMain
+	cp -r $(DOCBOOK_DIST)/webhelp/template/search/* $@/search
 
 
 clean:

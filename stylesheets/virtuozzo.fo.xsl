@@ -33,6 +33,8 @@
 <xsl:template name="page.number.format">1</xsl:template>
 <xsl:template name="force.page.count">no-force</xsl:template>
 
+<xsl:param name="runinhead.default.title.end.punct"/>
+
 <!--
   Table of contents inserted by <?asciidoc-toc?> processing instruction.
 -->
