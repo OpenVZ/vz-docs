@@ -849,7 +849,7 @@
 </xsl:template>
 
 <xsl:template name="table.of.contents.titlepage.recto">
-  <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" xsl:use-attribute-sets="table.of.contents.titlepage.recto.style" space-before.minimum="1em" space-before.optimum="1.5em" space-before.maximum="2em" space-after="0.5em" start-indent="0pt" color="#9D0C22" font-size="24.8832pt" font-weight="normal" font-family="sans-serif">
+  <fo:block xmlns:fo="http://www.w3.org/1999/XSL/Format" xsl:use-attribute-sets="table.of.contents.titlepage.recto.style" space-before.minimum="1em" space-before.optimum="1.5em" space-before.maximum="2em" space-after="0.5em" start-indent="0pt" color="#1B592A" font-size="24.8832pt" font-weight="normal" font-family="sans-serif"> <!--9D0C22-->
 <xsl:call-template name="gentext">
 <xsl:with-param name="key" select="'TableofContents'"/>
 </xsl:call-template></fo:block>

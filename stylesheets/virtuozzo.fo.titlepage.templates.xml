@@ -265,10 +265,10 @@
 	space-before.maximum="2em"
 	space-after="0.5em"
 	start-indent="0pt"
-	color="#9D0C22"
+	color="#1B592A"
 	font-size="&hsize5;"
 	font-weight="normal"
-	font-family="GothamLight,sans-serif"/>
+	font-family="GothamLight,sans-serif"/> <!--9D0C22-->
    </t:titlepage-content>
 
    <t:titlepage-content t:side="verso">

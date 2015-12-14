@@ -28,8 +28,8 @@ chapter   nop
 
     <xsl:template name="webhelpheader.logo">
 	<a href="index.html">
-	<img style='margin-right: 2px; margin-top: 12px; margin-left: 68px; height: 46px; padding-right: 25px; padding-top: 18px;' align="right"
-	    src='{$webhelp.common.dir}images/odin-logo-white.png'/>
+	<img style='margin-right: 2px; margin-top: 6px; margin-left: 38px; height: 51px; padding-right: 25px; padding-top: 18px;' align="right"
+	    src='{$webhelp.common.dir}images/openvz_logo_webhelp.png'/>
 	</a>
     </xsl:template>
 
@@ -121,7 +121,7 @@ span.searchTab {
     font-weight: bold;
     background-color: #FFF !important;
 }
-.treeview .hover { color: #9D0C22; }
+.treeview .hover { color: #1B592A; } /*9D0C22*/
 .filetree li span a { text-decoration: none; font-size: 12px; color: #517291; }
 */
 

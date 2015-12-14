@@ -34,9 +34,9 @@ code, .screen {
 }
 
 a.xref:link, a.xref:visited, a.xref:hover, a.xref:active {
-    color: #9D0C22 !important;
+    color: #1B592A !important;
     font-weight: normal;
-}
+} /*9D0C22*/
 
 #sidebar {
 background: #FFF none repeat scroll 0% 0%;
@@ -85,8 +85,8 @@ padding: 0.2em 21px;
 }
 
 .treeview .hover {
-color: #9D0C22;
-}
+color: #1B592A;
+} /*9D0C22*/
 
 #leftnavigation {
 position: static;

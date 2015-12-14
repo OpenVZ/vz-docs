@@ -1,12 +1,12 @@
 <mediaobject>
   <imageobject role="fo">
-    <imagedata align="left" contentdepth="50%" fileref="stylesheets/Odin_Virtuozzo_logo_pdf.png" />
+    <imagedata align="left" contentdepth="50%" fileref="stylesheets/openvz_logo_pdf.png" />
   </imageobject>
   <imageobject role="webhelp">
-    <imagedata fileref="common/images/Odin_Virtuozzo_logo_webhelp.png" />
+    <imagedata fileref="common/images/openvz_logo_webhelp.png" />
   </imageobject>
   <imageobject role="html">
-    <imagedata fileref="stylesheets/Odin_Virtuozzo_logo_pdf.png" />
+    <imagedata fileref="stylesheets/openvz_logo_pdf.png" />
   </imageobject>
 </mediaobject>
 

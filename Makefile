@@ -48,7 +48,7 @@ $(XML_DIR)/%.xml: %.asc
 	cp -r $(DOCBOOK_DIST)/webhelp/template/common $@
 	test ! -d $(USER_IMAGES_PARENT_DIR) || cp -r $(USER_IMAGES_PARENT_DIR) $@
 	cp stylesheets/virtuozzo.webhelp.stylesheet.css $@/common/css
-	cp stylesheets/odin-logo-white.png $@/common/images
+	cp stylesheets/openvz_logo_webhelp.png $@/common/images
 	rm $@/common/main.js
 	cp stylesheets/main.js $@/common
 	cp stylesheets/favicon.ico $@

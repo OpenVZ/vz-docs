@@ -42,10 +42,10 @@ div#booktitle h1 {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #9D0C22;
+  color: #1B592A;
   font-family: sans-serif;
   font-weight: normal;
-}
+} /*9D0C22*/ 
 
 h1 {
    font-size: 24.8832pt;
@@ -75,10 +75,10 @@ div.example p.title,
 div.sidebar p.title
 {
   font-weight: bold;
-  color: #9D0C22;
+  color: #1B592A;
   font-family: sans-serif;
   margin-bottom: 0.2em;
-}
+} /*9D0C22*/
 
 div.note {
     background-color: #F5F5F5;
@@ -355,9 +355,9 @@ a img {
 }
 
 a.xref:link, a.xref:visited, a.xref:hover, a.xref:active {
-    color: #9D0C22;
+    color: #1B592A;
     font-weight: normal;
-}
+} /*9D0C22*/
 
 @media print {
   div.navheader, div.navfooter { display: none; }

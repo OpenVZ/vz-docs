@@ -68,7 +68,7 @@ book    nop
   <xsl:attribute name="margin-right">0.75pt</xsl:attribute>
   <xsl:attribute name="background-color">
     <xsl:choose>
-      <xsl:when test="self::programlisting|self::screen">#E0E0E0</xsl:when>
+      <xsl:when test="self::programlisting|self::screen">#E0E0E0</xsl:when> <!--dbdcde,-->
       <xsl:otherwise>inherit</xsl:otherwise>
     </xsl:choose>
   </xsl:attribute>
@@ -107,7 +107,7 @@ book    nop
   <xsl:param name="position" select="''"/>
   <xsl:param name="gentext-key" select="''"/>
   <fo:block>  
-    <xsl:attribute name="color">#67151E</xsl:attribute>
+    <xsl:attribute name="color">#807F83</xsl:attribute> <!--67151E-->
     <!-- sequence can be odd, even, first, blank -->
     <!-- position can be left, center, right -->
     <xsl:choose>
@@ -142,7 +142,7 @@ book    nop
       <xsl:when test="$pageclass = 'body' and $sequence = 'first'">
       </xsl:when>
       <xsl:otherwise>
-        <xsl:attribute name="border-bottom">0.5pt solid #67151E</xsl:attribute>
+        <xsl:attribute name="border-bottom">0.5pt solid #807F83</xsl:attribute> <!--67151E-->
       </xsl:otherwise>
     </xsl:choose>
   </xsl:if>
@@ -188,12 +188,12 @@ book    nop
   <xsl:attribute name="space-before.maximum">1.2em</xsl:attribute>
   <xsl:attribute name="margin-{$direction.align.start}">0.0in</xsl:attribute>
   <xsl:attribute name="margin-{$direction.align.end}">0.0in</xsl:attribute>
-  <xsl:attribute name="border-top">1pt solid #368FAF</xsl:attribute>
-  <xsl:attribute name="border-bottom">1pt solid #368FAF</xsl:attribute>
+<!--  <xsl:attribute name="border-top">0pt solid #368FAF</xsl:attribute>
+  <xsl:attribute name="border-bottom">0pt solid #368FAF</xsl:attribute>-->
   <xsl:attribute name="padding-left">4pt</xsl:attribute>
   <xsl:attribute name="padding-right">4pt</xsl:attribute>
   <xsl:attribute name="padding-bottom">3pt</xsl:attribute>
-  <xsl:attribute name="background-color">#F5F5F5</xsl:attribute>
+  <xsl:attribute name="background-color">#ECEEF6</xsl:attribute> <!--F5F5F5-->
   <xsl:attribute name="keep-together.within-page">always</xsl:attribute>
 </xsl:attribute-set>
 
@@ -215,7 +215,7 @@ book    nop
     <l:gentext key="Note" text=""/>
     <l:gentext key="pubdate" text=""/>
     <l:context name="xref">
-      <l:template name="page.citation" text=" (p. %p)"/>
+      <l:template name="page.citation" text=" on page %p"/>
     </l:context>
   </l:l10n>
 </l:i18n>
@@ -226,7 +226,7 @@ book    nop
   <xsl:attribute name="color">
     <xsl:choose>
       <xsl:when test="self::ulink">blue</xsl:when>
-      <xsl:when test="self::xref">#9D0C22</xsl:when>
+      <xsl:when test="self::xref">#1B592A</xsl:when> <!--9D0C22-->
       <xsl:otherwise>inherit</xsl:otherwise>
     </xsl:choose>
   </xsl:attribute>
@@ -259,7 +259,7 @@ book    nop
             font-size="24.8832pt"
             font-weight="normal" 
             font-family="sans-serif"
-            color="#9D0C22">
+            color="#1B592A"> <!--9D0C22-->
     <xsl:call-template name="component.title">
       <xsl:with-param name="node" select="ancestor-or-self::chapter[1]"/>
     </xsl:call-template>
@@ -275,7 +275,7 @@ book    nop
             font-size="20.736pt"
             font-weight="normal" 
             font-family="sans-serif"
-            color="#9D0C22">
+            color="#1B592A"> <!--9D0C22-->
     <xsl:call-template name="component.title">
       <xsl:with-param name="node" select="ancestor-or-self::section[1]"/>
     </xsl:call-template>
