@@ -5,6 +5,7 @@
 
 <xsl:param name="use.role.for.mediaobject">1</xsl:param>
 <xsl:param name="preferred.mediaobject.role">webhelp</xsl:param>
+<xsl:param name="ignore.image.scaling">1</xsl:param>
 
 <xsl:param name="chunker.output.method">xml</xsl:param>
 
